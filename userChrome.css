@@ -1,0 +1,66 @@
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
+.tabbrowser-tab:not([pinned])
+.tab-text {
+  -moz-box-ordinal-group: 4 !important;
+}
+.tabbrowser-tab:not([pinned])
+.tab-throbber,
+.tabbrowser-tab:not([pinned])
+.tab-icon-image
+{
+  margin-left: 2px !important;
+}
+#urlbar {
+	max-width: 600px !important;
+}
+#urlbar-container
+{
+  min-width: 600px !important;
+  max-width: 600px !important;
+}
+/* The following 5 rules pertain to removing the extra
+ * icons from within the URL-bar */
+#star-button  {
+  display: none !important;
+}
+#identity-box {
+  display: none !important;
+}
+#urlbar.autocomplete-history-dropmaker {
+  display: none !important;
+}
+.autocomplete-history-dropmaker {
+  display: none !important;
+}
+#go-button  {
+  display: none !important;
+}
+#go-button-stack, .search-go-button-stack {
+  display: none !important;
+}
+/* Remove Back button when there's nothing to go Back to */
+#back-button[disabled="true"]  { display: none; }
+/* Remove Forward button when there's nothing to go Forward to */
+#forward-button[disabled="true"]  { display: none; }
+
+/* Script copied from userstyles.org FXChrome SSL id fix addon */
+#identity-box > hbox {
+    background-image: none !important;
+    background-color: none !important;
+    border-left-width: 0px !important;
+    border-right-width: 0px !important;
+}
+
+#identity-icon-label {
+    display: none !important;
+}
+
+.verifiedIdentity {
+    background-color: transparent !important;
+}
+
+.verifiedDomain {
+    background-color: transparent !important;
+}
+
