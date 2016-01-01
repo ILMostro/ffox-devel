@@ -1,0 +1,6 @@
+[submodule "submods/SimpleViewSource"]
+	path = submods/SimpleViewSource
+	url = https://github.com/victorporof/SimpleViewSource.git
+[submodule "submods/Restartless-Template"]
+	path = submods/Restartless-Template
+	url = https://github.com/victorporof/Restartless-Template.git
